@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+double a,b,x,y,confirm,confirm1,confirm2;
+
+int main(){
+    do{
+    do{
+    printf("\nEntre com o valor do coeficiente angular 'a':\n");
+    scanf("%lf", &a);
+    printf("\nEntre com o valor do coeficiente linear 'b':\n");
+    scanf("%lf", &b);
+    printf("\nA sua função do primeiro grau esta sendo definida atualmente por : %.2lfx+%.2lf\nDeseja prosseguir com a calculadora?\n Entre : 1 para sim e 2 para entrar outra função.\n", a,b);
+    scanf("%lf", &confirm);
+    }while(confirm==2);
+    
+    do{
+    ("\nEntre com o valor de 'x' para que calculemos o valor da função f(x):\n");
+    scanf("%lf", x);
+    printf("\n O seu X atualmente vale %.2lf.\nDeseja prosseguir com esse valor de X?\nEntre 1 se sim ou 2 para entrar outro valor para X.\n");
+    scanf("%lf", &confirm1);
+    }while(confirm1==2);
+    y=a*x+b;
+    printf("O valor da sua função f(%.2lf)=%.4lf",y);
+    printf("Deseja prosseguir com a calculadora?\n Entre : 1 para sim e 2 para entrar outra função.\n");
+    scanf("%lf",&confirm2);
+    }while(confirm2==2);
+}

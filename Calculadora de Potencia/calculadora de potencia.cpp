@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+double z;
+
+int main(){
+	do{	
+	double x, y,aux=1,i=1;
+	system("cls");
+	printf("\nEntre o valor da base:\n");
+	scanf("%lf", &x);
+	printf("\nEntre o valor do expoente:\n");
+	scanf("%lf", &y);
+	do{
+		aux*=x;
+		i++;
+	}while(i<=y);
+	
+	printf("\nO resultado de %.2lf elevado a %.2lf e: %.2lf\n", x,y,aux);
+	printf("Deseja utilizar a calculadora novamente?\nEntre : 1 para sim e 2 para nao.\n");
+	scanf("%lf", &z);
+	}while(z==1);
+	printf("Voce saiu do programa! Aperte qualquer tecla para prosseguir.");
+	getch();
+	return 0;
+}

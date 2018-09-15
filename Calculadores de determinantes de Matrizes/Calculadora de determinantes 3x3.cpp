@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+double a11,a12,a13,a21,a22,a23,a31,a32,a33, det,i;
+
+int main(){
+	do{
+	system("cls");	
+	printf("\nEntre os valores dos coeficientes da matriz na ordem a11,a12,a13...:\n");
+	printf("\nEntre com o valor de a11:\n");
+	scanf("%lf", &a11);
+	printf("\nEntre com o valor de a12:\n");
+	scanf("%lf", &a12);
+	printf("\nEntre com o valor de a13:\n");
+	scanf("%lf", &a13);
+	printf("\nEntre com o valor de a21:\n");
+	scanf("%lf", &a21);
+	printf("\nEntre com o valor de a22:\n");
+	scanf("%lf", &a22);
+	printf("\nEntre com o valor de a23:\n");
+	scanf("%lf", &a23);
+	printf("\nEntre com o valor de a31:\n");
+	scanf("%lf", &a31);
+	printf("\nEntre com o valor de a32:\n");
+	scanf("%lf", &a32);
+	printf("\nEntre com o valor de a33:\n");
+	scanf("%lf", &a33);
+	
+	det=((a11*a22*a33)+(a12*a23*a31)+(a13*a21*a32))-((a13*a22*a31)+(a11*a23*a32)+(a12*a21*a33));
+	printf("\nO determinante da matriz escolhida e: %lf\n",det);
+	printf("\nDeseja utilizar o programa mais uma vez?\n 1 = usar novamente | 2 = sair.\n");
+	scanf("%lf",&i);
+}while(i==1);
+	printf("Voce saiu do programa.Aperte qualquer tecla para continuar.");
+	getch();
+	return 0;
+}
