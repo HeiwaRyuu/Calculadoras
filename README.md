@@ -1,3 +1,1 @@
-# Calculadoras
-
-Aqui estão algumas calculadoras básicas feitas em C.
+This repository stores basic calculators created mostly using C language.
